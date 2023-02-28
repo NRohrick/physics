@@ -1,0 +1,736 @@
+
+<!-- saved from url=(0060)http://spiff.rit.edu/classes/phys283/lectures/long/long.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="StyleSheet" href="./1d_wave_deriv_files/classes.css" type="text/css"> 
+</head>
+
+<body>
+<!-- Creative Commons License -->
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><img alt="Creative Commons License" border="0" src="./1d_wave_deriv_files/somerights20.gif"></a>
+Copyright © Michael Richmond.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons License</a>.
+<p>
+<!-- /Creative Commons License -->
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+ 
+</p><h1>
+Longitudinal waves in a long, thin rod
+</h1>
+
+<p>
+We've been playing with string for many days.
+Let's switch to a different medium, 
+and a slightly different type of disturbance.
+We will examine the behavior of <b>longitudinal waves</b>
+moving through a long, thin rod.
+Unlike the transverse waves on a string,
+longitudinal waves involve the oscillation of 
+material along (and against) the direction
+of motion of the disturbance.
+
+</p><p>
+</p><ul>
+<li> <a href="https://www.youtube.com/watch?v=7cDAYFTXq3E">
+        A video showing the difference between transverse
+            and longitudinal waves </a>
+  </li>
+</ul>
+
+
+<p>
+You should see our new pal the wave equation show up
+as we examine the response of a little section of the rod
+to a perturbing force ...
+
+
+</p><ul>
+<li> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/long.html#forces"> Forces on a little section of a rod </a> </li>
+<li> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/long.html#strain"> Stress, and the reaction to it: strain </a> </li>
+<li> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/long.html#diffq"> The differential equation of motion </a> </li>
+<li> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/long.html#modes">  The normal modes of a rod clamped at one end </a> </li>
+<li> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/long.html#middle"> The normal modes of a rod clamped in the middle </a> </li>
+<li> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/long.html#ring"> Example: ring the rod </a> </li>
+</ul>
+
+
+<p>
+</p><hr>
+<p>
+</p><h4>
+<p>
+<a name="forces"> Forces on a little section of a rod </a> 
+</p></h4>
+
+<p>
+We're going to use two different variables in the following
+discussion, both of which describe in some way the
+position of a little section of a rod along the x-axis.
+Let us therefore define very clearly the meaning of
+each one before we start.
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_xz.png" width="725" height="128"></center>
+
+
+<p>
+Consider a long, thin rod of material,
+with cross-section area <b>A</b>
+and density <b>&#961;</b>.
+We'll concentrate on the properties of 
+a little section of the rod
+which runs from position
+<b>x</b>
+to
+<b>(x + &#916; x)</b>.
+
+</p><p>
+<img src="./1d_wave_deriv_files/rod_a.png" width="772" height="299">
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the mass of this little section?
+
+
+
+
+
+
+
+</font></pre>
+
+<p>
+Right.
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_dm.png" width="478" height="69"></center>
+
+<p>
+Now, we exert a force on one end of the rod.
+How does it respond?
+
+</p><p>
+<img src="./1d_wave_deriv_files/rod_a_f.png" width="894" height="299">
+
+</p><p>
+The rod stretches in response to the force.
+The amount by which the rod stretches 
+depends on how far from the end one looks:
+the closer to the end with the force,
+the bigger the change in length.
+
+</p><p>
+<img src="./1d_wave_deriv_files/rod_both.png" width="891" height="561">
+
+</p><p>
+Let's call the change in the position of any
+point on the rod <b>z</b>.
+The closer to the right end of the rod,
+the bigger <b>z</b> is.
+At the position of the left-hand
+edge of our section,
+<b>x</b>,
+the material deforms by 
+<b>z</b>;
+but at the right-hand edge of the section,
+the material deforms by a slightly larger amount
+<b>(z + &#916; z)</b>.
+
+</p><p>
+In other words, our little section not only
+translates to the right,
+but becomes slightly longer, too.
+
+</p><p>
+Why does the section elongate?
+Because the force pulling on its right-hand side
+is slightly bigger than the force pulling
+on its left-hand side.
+In other words, <b>F<sub>2</sub> &gt; F<sub>1</sub></b>.
+
+</p><p>
+<img src="./1d_wave_deriv_files/rod_two_force.png" width="688" height="253">
+
+
+</p><p>
+</p><hr>
+<p>
+</p><h4>
+<p>
+<a name="strain"> Stress, and the reaction to it: strain </a> 
+</p></h4>
+
+<p>
+You may recall that physicists use the term
+<b>stress</b>
+to describe the differential force acting
+on the two ends of a little section of an object.
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_stress.png" width="627" height="132"></center>
+
+<p>
+In response to the stress on an object, 
+it may change its shape;
+this response is called the 
+<b>strain.</b>
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_strain.png" width="690" height="109"></center>
+
+<p>
+For many objects,
+these two phenomena -- the stress on an object
+and the resulting strain --
+are related in a simple manner,
+at least when the changes in shape 
+are very small
+compared to the original size of the object.
+In general,
+the stress is equal to some
+<b>elastic modulus</b>
+multiplied by the strain.
+When the object is long and thin,
+and being stretched along its length,
+this coefficient is called
+<b>Young's modulus</b>.
+It is usually labelled with either 
+<b>Y</b> or <b>E</b>.
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_y_1.png" width="433" height="70"></center>
+
+<p>
+</p><center><img src="./1d_wave_deriv_files/eqn_y_2.png" width="506" height="120" border="2"></center>
+
+
+<p>
+The left-hand side of this boxed equation
+has the net force on the little section,
+divided by area.
+That net force, by Newton's Second Law,
+is just the mass of the section
+times its acceleration in the direction of the rod's length.
+In other words,
+the acceleration in the <b>z</b> direction.
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_f_ma.png" width="517" height="102"></center>
+
+<p>
+So the left-hand side becomes
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_f_ma_2.png" width="485" height="111"></center>
+
+
+<p>
+Now, here comes the tricky part.
+On the right hand side of the boxed equation,
+there is a term for the
+change in <b>z</b>
+divided by the change in <b>x</b>.
+How large is the change in the stretched distance,
+<b>&#916; z</b>,
+over the length of our little section?
+One way to calculate is 
+as the rate at which <b>z</b> is changing with <b>x</b>,
+multiplied by the width of our little section:
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_delta_z.png" width="330" height="115"></center>
+
+<p>
+</p><blockquote>
+<font size="-1">
+This should remind you of a similar mathematical technique
+we called upon in our previous class meeting,
+when 
+<a href="http://spiff.rit.edu/classes/phys283/lectures/string_ii/string_ii.html#tricky">
+  discussing the change in slope of a vibrating string. </a>
+</font>
+</blockquote>
+
+<p>
+When all the distances involved are very small,
+and we restrict ourselves to a fixed moment in time,
+we can write this using the second derivative of
+<b>z</b>
+with respect to 
+<b>x</b>.
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_delta_z_2.png" width="909" height="125"></center>
+
+
+<p>
+</p><hr>
+<p>
+</p><h4>
+<p>
+<a name="diffq"> The differential equation of motion </a> 
+</p></h4>
+
+<p>
+So, if we use these relationships, 
+Newton's Second Law for the motion of this
+little section of the rod turns into
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_diffq_a.png" width="1071" height="109"></center>
+
+<p>
+Putting this into the standard form,
+with second SPATIAL derivative on the left
+and second TEMPORAL derivative on the right,
+we end with the wave equation for
+longitudinal waves travelling down a long, thin rod.
+Remember, 
+<b>z</b> 
+is defined as the displacement of some tiny piece
+of the rod away from its equilibrium position;
+it runs parallel to the <b>x</b>-direction.
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_diffq_b.png" width="388" height="114"></center>
+
+<p>
+</p><pre><font size="+2">
+
+  Q:  What is the speed of these waves?
+
+
+
+
+
+
+
+
+
+</font></pre>
+
+<p>
+Yes, the speed of the waves is given by 
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_v.png" width="640" height="121"></center>
+
+
+
+
+<p>
+</p><hr>
+<p>
+</p><h4>
+<a name="modes">
+The normal modes of a rod clamped at one end
+</a>
+</h4>
+
+<p>
+As you might guess, there are certain special modes --
+<b>normal modes</b> --
+of vibration in which all parts of the rod oscillate
+with the same frequency <b>&#969;</b>.
+What are the frequencies corresponding to these modes?
+
+</p><p>
+In this case, the easiest way to find them is to skip
+the mathematics and look at the physical situation.
+Suppose that we clamp one end of the rod, 
+holding it perfectly still and preventing 
+it from vibrating.
+The material throughout the rest of the rod
+may vibrate,
+and the material at the right end of the rod
+is free to vibrate as well.
+
+</p><p>
+<img src="./1d_wave_deriv_files/clamp_a.png" width="917" height="353">
+
+</p><p>
+In this case, any oscillations must
+have amplitude zero
+at the left (clamped) end of the rod,
+but maximum amplitude at the right (un-clamped)
+end of the rod.
+The lowest normal mode, aka the fundamental mode,
+must therefore have an amplitude which looks like this.
+In the figure below,
+the <i> vertical</i> position of the green line away from
+the mid-point of the rod denotes the 
+amplitude of the <i>horizontal</i> motions.
+Yes, it's awkward to try to draw longitudinal vibrations.
+
+
+</p><p>
+<img src="./1d_wave_deriv_files/end_n=1.png" width="995" height="365">
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the wavelength of the <b>n=1</b> mode?
+
+
+
+
+
+
+</font></pre>
+
+<p>
+<font size="-1"> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/ans_n1_open.txt"> My answer </a> </font>
+
+
+</p><p>
+In the <b>n=2</b> mode,
+the amplitude at each end is the same --
+zero at left, maximum at right --
+but there is now one additional node in between.
+
+</p><p>
+<img src="./1d_wave_deriv_files/end_n=2.png" width="995" height="365">
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the wavelength of the <b>n=2</b> mode?
+
+
+
+
+
+
+</font></pre>
+
+<p>
+<font size="-1"> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/ans_n2_open.txt"> My answer </a> </font>
+
+
+</p><p>
+In the <b>n=3</b> mode,
+there is one more node in the middle.
+
+</p><p>
+<img src="./1d_wave_deriv_files/end_n=3.png" width="995" height="365">
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the wavelength of the <b>n=3</b> mode?
+
+
+
+
+
+
+</font></pre>
+
+<p>
+<font size="-1"> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/ans_n3_open.txt"> My answer </a> </font>
+
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  Can you derive an equation for the wavelength of the 
+              <b>n</b>'th normal mode?
+
+
+  Q:  Can you derive an equation for the frequency of the 
+              <b>n</b>'th normal mode?
+
+
+
+
+
+
+
+</font></pre>
+
+<p>
+You should end up with
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_lambda_open.png" width="329" height="111"></center>
+
+<p>
+and 
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_f_open.png" width="613" height="167"></center>
+
+
+
+
+
+<p>
+</p><hr>
+<p>
+</p><h4>
+<a name="middle">
+The normal modes of a rod clamped in the middle
+</a>
+</h4>
+
+<p>
+This time, 
+let's hold the rod at its middle,
+rather than at one end.
+Now, the amplitude of oscillation must be zero
+at the center of the rod,
+but must be a maximum at both ends.
+
+</p><p>
+<img src="./1d_wave_deriv_files/clamp_b.png" width="917" height="353">
+
+</p><p>
+This means that the fundamental mode of vibration
+looks like:
+
+</p><p>
+<img src="./1d_wave_deriv_files/open_n=1.png" width="995" height="365">
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the wavelength of the <b>n=1</b> mode?
+
+
+
+
+
+
+</font></pre>
+
+<p>
+<font size="-1"> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/ans_n1_bothopen.txt"> My answer </a> </font>
+
+
+</p><p>
+In the <b>n=2</b> mode,
+the amplitude at each end is the same --
+zero at left, maximum at right --
+but there is now one additional node between
+each end and the middle.
+
+</p><p>
+<img src="./1d_wave_deriv_files/open_n=2.png" width="995" height="365">
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the wavelength of the <b>n=2</b> mode?
+
+
+
+
+
+
+</font></pre>
+
+<p>
+<font size="-1"> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/ans_n2_bothopen.txt"> My answer </a> </font>
+
+
+</p><p>
+In the <b>n=3</b> mode,
+we add another node to each half of the rod.
+
+</p><p>
+<img src="./1d_wave_deriv_files/open_n=3.png" width="995" height="365">
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the wavelength of the <b>n=3</b> mode?
+
+
+
+
+
+
+</font></pre>
+
+<p>
+<font size="-1"> <a href="http://spiff.rit.edu/classes/phys283/lectures/long/ans_n3_bothopen.txt"> My answer </a> </font>
+
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  Can you derive an equation for the wavelength of the 
+              <b>n</b>'th normal mode?
+
+
+  Q:  Can you derive an equation for the frequency of the 
+              <b>n</b>'th normal mode?
+
+
+
+
+
+
+
+</font></pre>
+
+<p>
+You should end up with
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_lambda_bothopen.png" width="367" height="96"></center>
+
+<p>
+and 
+
+</p><p>
+</p><center><img src="./1d_wave_deriv_files/eqn_f_bothopen.png" width="602" height="139"></center>
+
+
+<p>
+</p><hr>
+<p>
+</p><h4>
+<p>
+<a name="ring"> Example: ring the rod </a> 
+</p></h4>
+
+<p>
+I have in class a long, thin rod of aluminum.
+The properties of this rod are:
+
+</p><p>
+</p><pre><font size="+2">
+
+     length           L   =   91.1 cm
+
+     density          &#961;   =   2700 kg/m^3
+
+     Young's modulus  Y   =   69 x 10<sup>9</sup> N/m^2
+
+
+
+</font></pre>
+
+<p>
+Can you figure out the answers to the following questions?
+
+</p><p>
+</p><pre><font size="+2">
+
+  Q:  What is the speed of waves travelling through the rod?
+
+
+  Q:  If I hold the rod in the middle and ring it,
+               what frequency of sound will we hear?
+
+
+  Q:  If I hold the rod at 1/4 of the distance from left
+               to right, and ring it, what frequency of 
+               sound will we hear?
+
+
+  Q:  If I hold the rod at 1/3 of the distance from left
+               to right, and ring it, what frequency of 
+               sound will we hear?
+
+
+
+
+
+</font></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+</p><hr>
+<p>
+</p><h4>
+<a name="more">
+For more information
+</a>
+</h4>
+
+<ul>
+<li> <a href="https://www.youtube.com/watch?v=7cDAYFTXq3E">
+         Illustration of longitudinal and transverse waves </a>
+           thanks to
+         <a href="https://www.youtube.com/channel/UCujISSgt4k4A1AwkoXcqXvA">
+             Animations for Physics and Astronomy </a>
+  </li>
+
+</ul>
+
+
+
+
+<p>
+</p><hr>
+<p>
+<!-- Creative Commons License -->
+</p><p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><img alt="Creative Commons License" border="0" src="./1d_wave_deriv_files/somerights20.gif"></a>
+Copyright © Michael Richmond.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons License</a>.
+</p><p>
+<!-- /Creative Commons License -->
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+
+ 
+
+
+</p></body></html>
